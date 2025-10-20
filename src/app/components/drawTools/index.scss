@@ -1,0 +1,32 @@
+/* Custom styling for the tooltip */
+.leaflet-container .leaflet-tooltip {
+    z-index: 1000 !important; /* Ensure tooltip is on top of map */
+  }
+  
+  .tooltip-container {
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+  }
+  .legend-container {
+    position: absolute;
+    // top: 0;
+    z-index: 1000;
+  }
+  .pixel-chart-container {
+    width: 50%;
+    height: 96%;
+    margin: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+  }
+  
+
+  .zoom-container {
+    position: absolute;
+    z-index: 1000;
+    top: 10rem;
+  }
+  

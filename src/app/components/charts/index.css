@@ -1,0 +1,34 @@
+.apexcharts-gridlines-horizontal{
+ visibility: hidden;
+}
+
+.apexcharts-gridline{
+    visibility: hidden;
+}
+
+
+.chart-container {
+    background-color: #fff !important;
+      width: 100%;  /* Full width */
+      height: 50vh; /* 50% of the viewport height */
+    }
+  
+  .apexcharts-title-text{
+    font-family: 'poppins', sans-serif !important;
+      font-size: 14px;
+      font-weight: 600;
+      fill: #000000 !important;
+  }
+  .leaflet-popup-content p{
+    margin: unset !important;
+    margin: 0px !important;
+  }
+  
+  
+  /* svg{
+    color: #1F3D3D !important;
+  } */
+  
+  input {
+    background-color: #1F3D3D !important;
+  }

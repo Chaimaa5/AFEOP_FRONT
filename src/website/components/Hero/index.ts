@@ -1,0 +1,1 @@
+export { SatelliteHero } from './SatelliteHero';

@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body{
+    background: #000;
+  }
+  
+
+  .slider img {
+    width: 100%;
+    border-radius:10px;
+  }
+  .react-multi-carousel-list{
+    position: unset !important;
+    justify-content: center;
+  }
+  /* .react-multi-carousel-list {
+  padding: 0rem 0 2rem 0;
+  } */
+  
+  .custom-dot-list-style button{
+  
+  background: rgb(4, 10, 70);
+  }
+  .react-multi-carousel-dot.react-multi-carousel-dot--active button{
+  background: rgb(255, 68, 68) !important;
+  }
+
+
+
+  .image-container {
+    position: relative;
+    display: inline-block; /* Ensure the container only takes the size of the image */
+  }
+  
+  .styled-image {
+    display: block; /* Remove space below the image */
+  }
+  
+  .icon-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border: #000;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center; /* Center icons horizontally */
+    align-items: center; /* Center icons vertically */
+    opacity: 0; /* Initially hide icons */
+    transition: opacity 0.3s; /* Smooth transition for hover effect */
+    background-color: rgba(255, 255, 255, 0.847); /* Black background with 50% opacity */
+  }
+  
+  .image-container:hover .icon-overlay {
+    opacity: 1; /* Show icons on hover */
+  }
+  
+  .icon {
+   width: 18px; /* Adjust icon size as needed */
+    color: white; /* Change icon color */
+    margin: 0 10px; /* Spacing between icons */
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
+  
+  .preview-icon:hover,
+  .save-icon:hover {
+    color: rgb(247, 247, 235); /* Change icon color on hover for better visibility */
+  }
+  

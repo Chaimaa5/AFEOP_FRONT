@@ -1,0 +1,122 @@
+@import url("//cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.css");
+@import url("https://unpkg.com/leaflet@1.8.0/dist/leaflet.css");
+@import url("//cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+.chart-container {
+  background-color: #fff !important;
+    width: 100%;  /* Full width */
+    height: 50vh; /* 50% of the viewport height */
+  }
+
+.apexcharts-title-text{
+  font-family: 'poppins', sans-serif !important;
+    font-size: 14px;
+    font-weight: 600;
+    fill: #000000 !important;
+}
+.leaflet-popup-content p{
+  margin: unset !important;
+  margin: 0px !important;
+}
+
+
+.css-6fm6rz-MuiPaper-root-MuiCard-root{
+  background-color: #ffffff00 !important;
+  color: #fff !important;
+  border: 0px !important;
+  margin: 0px !important;
+  border-radius: 10px !important;
+}
+/* svg{
+  color: #1F3D3D !important;
+} */
+
+/* input {
+  background-color: #1F3D3D !important;
+} */
+
+.apexcharts-gridlines-horizontal{
+  visibility: hidden;
+ }
+ 
+ .apexcharts-gridline{
+     visibility: hidden;
+ }
+ 
+
+
+
+#map {
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+}
+
+.leaflet-container {
+  /* width: 100%; */
+  height: 100%;
+  display: flex;
+  z-index: 10 !important;
+}
+
+.custom-icon {
+  background-color: #ff5733; /* Set the background color */
+  padding: 4px; /* Add padding around the icon */
+  border-radius: 50%; /* Make the icon container circular */
+}
+
+/* Style the icon image within the container */
+.custom-icon img {
+  width: 24px; /* Set the width of the icon image */
+  height: 24px; /* Set the height of the icon image */
+}
+
+.leaflet-control-zoom {
+  background: transparent;
+  border: none;
+}
+
+
+/*Setup*/
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+html,
+body,
+#mapid {
+  height: 100%;
+  width: 100%;
+}
+
+.leaflet-draw-draw-polyline {
+  background-color: white !important;
+  border-radius: 10% !important;
+}
+.leaflet-draw-draw-polygon {
+  background-color: white !important;
+  border-radius: 10% !important;
+}
+
+.leaflet-control-zoom-in {
+  background-color: white !important;
+  border-radius: 10% !important;
+}
+
+.leaflet-control-zoom-out {
+  background-color: white !important;
+  border-radius: 10% !important;
+}
+.leaflet-draw-draw-rectangle {
+  background-color: white !important;
+  border-radius: 10% !important;
+}
+
+.leaflet-draw-draw-marker {
+  background-color: white !important;
+  border-radius: 10% !important;
+}
+.leaflet-draw-draw-polyline .span {
+  color: white !important;
+
+}

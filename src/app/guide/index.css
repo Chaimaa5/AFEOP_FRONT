@@ -1,0 +1,13 @@
+/* Customizing the stepper colors */
+.ant-steps-item-finish .ant-steps-item-icon {
+    background-color: #4CAF50 !important; /* Green */
+    border-color: #4CAF50 !important;
+}
+
+.ant-steps-item-process .ant-steps-item-icon {
+    background-color: #1F3D3D !important; /* Blue */
+    border-color: #1F3D3D !important;
+    
+}
+
+

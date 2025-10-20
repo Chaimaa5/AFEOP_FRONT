@@ -1,0 +1,113 @@
+// import { DownOutlined } from "@ant-design/icons";
+// import { Autocomplete, AutocompleteItem, Select, SelectItem, Slider, useSelect } from "@nextui-org/react";
+// import { Button, ColorPicker, Space } from "antd";
+// import { useEffect, useState } from "react";
+// import Axios from "../api/axios";
+// import { AddIcon } from "./layerControl/addIcon";
+// import trash from '../../assets/icons/trash.svg'
+// import { useDispatch } from "react-redux";
+// import { updateOpacity } from "../../store/features/rasterSlice";
+// import { useSelector } from "react-redux";
+// import { RootState } from "../../store/store";
+
+// interface ColorMap {
+//   key: string;
+//   label: string;
+// }
+// export default function LayerControl() {
+//   const [colorMaps, setColorMaps] = useState<string[]>([]); // State to hold colormap options
+//   const dispatch = useDispatch();
+//   const layers = useSelector((state: RootState) => state.layer.layers);
+//   const [layer, setLayer] = useState("");
+//   const handleOpacityChange = (newValue) => {
+//     dispatch(updateOpacity(newValue));
+//   };
+//     useEffect(() => {
+//     Axios.get("http://localhost:8000/colorMaps")  .then((response) => {
+//       const data = response.data;
+//       if (data) {
+//         // Convert the response object to an array of ColorMap items
+//         // const colormapOptions = Object.keys(data).map((key) => ({
+//         //   key,
+//         //   label: data // In this case, key serves as both key and label
+//         // }));
+//         setColorMaps(data.colorMaps);
+//         // console.log("Color maps:", colormapOptions);
+//       }
+//     })
+//     .catch((error) => {
+//       console.error("Error fetching color maps:", error);
+//     });
+//   }, []);
+//   const [color1, setColor1] = useState("#1677ff");
+//   const [color2, setColor2] = useState("#1677ff");
+//   return (
+//     <div className="flex flex-col gap-4 w-[100%]">
+//          <Select
+//       label=""
+//       placeholder="Select layer"
+//       labelPlacement="outside"
+//       className=" w-[100%] font-poppins"
+//       disableSelectorIconRotation
+//       value={layer}
+//       onChange={(e) => setLayer(e.target.value)}
+//     >
+//         {layers.map((value, index) => (
+//         <SelectItem key={index}>
+//           {value}
+//         </SelectItem>
+//         ))}
+//         </Select>
+//       <div className="flex flex-col gap-4 w-[98%] justify-end items-start pl-5">
+
+
+     
+//       {
+//         layer === "Raster" && 
+//     <Space direction="vertical" className="w-[100%]">
+//       <div className="flex w-[100%] justify-between">
+//       <ColorPicker defaultValue={color1} onChange={(e) => setColor1(e.target.value)} showText allowClear />
+//       <Button className=" bg-[#F9F9F9]  rounded-md border-none">
+
+//       <img src={trash}/>
+//       </Button>
+//       </div>
+//       <div className="flex w-[100%] justify-between">
+//       <ColorPicker defaultValue={color2} onChange={(e) => setColor2(e.target.value)} showText allowClear />
+//       <Button className=" bg-[#F9F9F9]  rounded-md border-none">
+
+//       <img src={trash}/>
+//       </Button>
+//       </div>
+//     </Space>
+//       }
+// {
+//   layer &&
+// <>
+//       <Slider 
+//       label="Opacity" 
+//       step={0.01} 
+//       maxValue={1} 
+//       minValue={0} 
+//       defaultValue={1}
+//       onChange={handleOpacityChange}
+//       className="max-w-md"
+//     />
+//     <Autocomplete 
+//         placeholder="Select an color ramp" 
+//         className="max-w-xs font-poppins" 
+//       startContent={<AddIcon />}
+
+//       >
+//         {colorMaps.map((colormap) => (
+//           <AutocompleteItem key={colormap} value={colormap}>
+//             {colormap}
+//           </AutocompleteItem>
+//         ))}
+//       </Autocomplete>
+//       </>
+//       }
+//       </div>
+//     </div>
+//   );
+// };

@@ -1,0 +1,17 @@
+:where(.css-dev-only-do-not-override-qnu6hi).ant-menu-light.ant-menu-root.ant-menu-vertical{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50px !important;
+    height: 23vh;
+    border-radius: 0 30px 30px 0px !important;
+}
+
+
+:where(.css-dev-only-do-not-override-qnu6hi).ant-menu-light .ant-menu-item-selected, :where(.css-dev-only-do-not-override-qnu6hi).ant-menu-light>.ant-menu .ant-menu-item-selected{
+
+    background-color: #f0f0f0 !important;
+    background: #1F3D3D !important;
+    color: white !important;
+    // border-radius: 0 30px 30px 0px !important;
+}

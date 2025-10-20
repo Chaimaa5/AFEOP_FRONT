@@ -1,0 +1,138 @@
+@import url("https://unpkg.com/leaflet@1.8.0/dist/leaflet.css");
+// @import url("//cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css/");
+@import url("//cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.css");
+.leaflet-container {
+  // width: 100%;
+  height: 100%;
+  display: flex;
+  z-index: 10 !important;
+}
+
+.custom-icon {
+  background-color: #ff5733; /* Set the background color */
+  padding: 4px; /* Add padding around the icon */
+  border-radius: 50%; /* Make the icon container circular */
+}
+
+/* Style the icon image within the container */
+.custom-icon img {
+  width: 24px; /* Set the width of the icon image */
+  height: 24px; /* Set the height of the icon image */
+}
+
+.leaflet-control-zoom {
+  background: transparent;
+  border: none;
+}
+
+// .leaflet-draw-draw-polygon{
+//     // background-color: transparent !important;
+//     border-color: white !important;
+//     color: white;
+// }
+
+// .leaflet-touch .leaflet-bar a {
+//     color: white;
+//     background-color: rgba(167, 218, 220, 0.21);
+//     border-color: white;
+// }
+/*Setup*/
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+html,
+body,
+#mapid {
+  height: 100%;
+  width: 100%;
+}
+
+// .leaflet-draw-toolbar a {
+//   background-image: '' !important;
+//   background-image: '' !important;
+//   background-repeat: no-repeat;
+//   background-size: 300px 30px;
+//   background-clip: padding-box
+// }
+
+// .leaflet-retina .leaflet-draw-toolbar a {
+//   background-image: '' !important;
+//   background-image: '' !important;
+// }
+
+.leaflet-draw-draw-polyline {
+  background-color: white !important;
+  // border: 1px solid #666 !important;
+  border-radius: 10% !important;
+  // display: inline-block !important;
+}
+.leaflet-draw-draw-polygon {
+  background-color: white !important;
+  // border: 1px solid #666 !important;
+  border-radius: 10% !important;
+  // display: inline-block !important;
+}
+
+.leaflet-control-zoom-in {
+  border: none;
+  background-color: white !important;
+  // border: 1px solid #666 !important;
+  border-radius: 10% !important;
+}
+
+.leaflet-control-zoom-out {
+  background-color: white !important;
+  // border: 1px solid #666 !important;
+  border-radius: 10% !important;
+}
+.leaflet-draw-draw-rectangle {
+  background-color: white !important;
+  // border: 1px solid #666 !important;
+  border-radius: 10% !important;
+  // display: inline-block !important;
+}
+
+.leaflet-draw-draw-marker {
+  background-color: white !important;
+  // border: 1px solid #666 !important;
+  border-radius: 10% !important;
+  // display: inline-block !important;
+}
+.leaflet-draw-draw-polyline .span {
+  color: white !important;
+  // border: 1px solid #666 !important;
+  // border-radius: 10% !important;
+  // display: inline-block !important;
+}
+
+.custom-zoom-in {
+  position: absolute;
+    top: 45rem;
+    right: 29rem;
+    font-size: large;
+    bottom: unset;    /* Remove the default left position if any */
+}
+
+
+.custom-zoom-out {
+  position: absolute;
+    top: 48.5rem;
+    right: 29rem;
+    font-size: large;
+
+    bottom: unset;    /* Remove the default left position if any */
+}
+.custom-zoom-control button {
+  background-color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 40px;
+  margin: 5px;
+}
+
+.custom-zoom-in:hover,
+.custom-zoom-out:hover {
+  background-color: #ddd;
+}
